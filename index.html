@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Yummy</title>
+</head>
+
+<body>
+
+
+    <!-- start code .  -->
+    <section class="mainSection bg-black  d-flex position-relative ">
+        <!-- aside  -->
+        <aside class="aside d-flex position-fixed ">
+            <div class="asideleft p-3 text-white bg-black vh-100 d-flex flex-column justify-content-between">
+                <div class="list-group position-relative ">
+                    <ul class="list-unstyled pt-4 ">
+                        <li class="pb-3 link_1 tagline position-relative">Search</li>
+                        <li class="pb-3 link_2 tagline position-relative">Categories</li>
+                        <li class="pb-3 link_3 tagline position-relative">Area</li>
+                        <li class="pb-3 link_4 tagline position-relative">Ingredients</li>
+                        <li class="pb-3 link_5 tagline position-relative">contact Us</li>
+                    </ul>
+                </div>
+                <div class="copyRight">
+                    <div class="d-flex gap-2 justify-content-start py-2">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <p>Copyright Â© 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <div class="asideRight p-3 bg-white vh-100 d-flex flex-column justify-content-between align-items-center">
+                <div><img src="img/logo.png" class="img-fluid" alt=""></div>
+                <div><i class="btnAside fa-solid fa-bars"></i></div>
+                <div class="d-flex flex-column justify-content-between align-items-center gap-3">
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+        <!-- end aside  -->
+        <div id="loding"
+            class="lood bg-black w-100 vh-100 position-fixed  d-flex justify-content-center align-items-center">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="container overflow-hidden">
+            <!-- serch by name and litter  -->
+            <div class="serch row row-cols-2 justify-content-between d-none">
+                <div class="form-group pt-4">
+                    <input type="text" class="form-control bg-black text-white" id="serchByName"
+                        placeholder="Enter name" name="Nmae">
+                </div>
+                <div class="form-group pt-4">
+                    <input type="text" class="form-control bg-black text-white" id="serchByLitter"
+                        placeholder="Enter litter" name="Litter">
+                </div>
+            </div>
+            <!-- end serch by name and litter  -->
+
+            <!-- content meals  -->
+            <div id="allMeals"
+                class=" displayMeals row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4 align-content-start w-100 my-4 position-relative">
+            </div>
+            <!-- end scontent meals  -->
+
+            <!-- show one mael -->
+            <div id="showOneMael" class="d-none container showMaeldetals ">
+                <!-- 
+                <div class=" py-5 my-4 row text-white">
+                    <div class="col-4 leftDetales ">
+                        <img src="img/food.webp" class="img-fluid rounded-3" alt="">
+                        <h3 class="text-center py-2">titel</h3>
+                    </div>
+                    <div class="col-8 rightDetales ">
+                        <h2>titel</h2>
+                        <p>0. Marinate beef in soy sauce, lemon (or calamansi), and ground black pepper for at least 1
+                            hour. Note: marinate overnight for best result 1. Heat the cooking oil in a pan then pan-fry
+                            half of the onions until the texture becomes soft. Set aside 2. Drain the marinade from the
+                            beef. Set it aside. Pan-fry the beef on the same pan where the onions were fried for 1
+                            minute per side. Remove from the pan. Set aside 3. Add more oil if needed. Saute garlic and
+                            remaining raw onions until onion softens. 4. Pour the remaining marinade and water. Bring to
+                            a boil. 5. Add beef. Cover the pan and simmer until the meat is tender. Note: Add water as
+                            needed. 6. Season with ground black pepper and salt as needed. Top with pan-fried onions. 7.
+                            Transfer to a serving plate. Serve hot. Share and Enjoy!</p>
+                        <h2>AreaL: <span>cairo</span></h2>
+                        <h2>Category : <span>Beef</span></h2>
+                        <h3 class="pb-2">Recipes :</h3>
+                        <span class="p-1 bg-info-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-info-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-info-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-info-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+
+                        <h2 class="pt-3 pb-3">Tags : </h2>
+                        <span class="p-1 bg-danger-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-danger-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-danger-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+                        <span class="p-1 bg-danger-subtle bg-opacity-75 text-black rounded-1 m-1 ">1kg Beef </span>
+
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-success" target="_blank">source</a>
+                            <a href="#" class="btn btn-danger" target="_blank">Youtube</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <!-- end show one mael -->
+
+
+            <!-- start area -->
+            <div id="showArea"
+                class="d-none container row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4 align-content-start w-100 my-4 position-relative ">
+            </div>
+            <!-- start area -->
+
+            <!-- start Ingredients -->
+            <div id="showIngredients"
+                class="d-none container row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4 align-content-start w-100 my-4 position-relative ">
+            </div>
+            <!-- end Ingredients -->
+
+
+            <!-- ==============================================================================-->
+
+            <!-- start contact -->
+            <div id="contactUs"
+                class="d-none container d-flex justify-content-center align-items-center vh-100 overflow-hidden">
+
+                <form id="contactForm" class="w-75">
+                    <div class="mb-3 row row-cols-2">
+                        <!-- strt input section 1 -->
+                        <div>
+                            <input type="text" class="form-control " id="inputName" placeholder="Enter your name"
+                                aria-describedby="emailHelp">
+                            <div id="nameNotValid"
+                                class="d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                Special
+                                characters and
+                                numbers not allowed
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email" class="form-control " id="inputEmail" placeholder="Enter your email"
+                                aria-describedby="emailHelp">
+                            <div id="mailNotValid"
+                                class=" d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                Email not
+                                valid *exemple@yyy.zzz
+
+                            </div>
+                        </div>
+
+                        <!-- end input section 1 -->
+
+                    </div>
+                    <div class="mb-3 row row-cols-2">
+
+                        <!-- strt input section 1 -->
+                        <div>
+                            <input type="phone" class="form-control " id="inputphone" placeholder="Enter your phone"
+                                aria-describedby="emailHelp">
+                            <div id="PhoneNotValid"
+                                class=" d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                please no space between number
+                                Special
+                                characters and
+                                numbers not allowed
+                            </div>
+                        </div>
+                        <div>
+                            <input type="number" class="form-control " id="inputAge" placeholder="Enter your age"
+                                aria-describedby="emailHelp">
+                            <div id="ageNotValid"
+                                class=" d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                Special
+                                characters and
+                                numbers not allowed
+                            </div>
+                        </div>
+
+                        <!-- end input section 1 -->
+                    </div>
+                    <div class="mb-3 row row-cols-2">
+                        <!-- strt input section 1 -->
+                        <div>
+                            <input type="password" class="form-control " id="inputPassword"
+                                placeholder="Enter your password" aria-describedby="password">
+                            <div id="PassNotValid"
+                                class="d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                Enter valid
+                                password *Minimum eight characters, at least one letter and one number:*
+                            </div>
+                        </div>
+                        <div>
+                            <input type="password" class="form-control " id="inputRepassword" placeholder="Repassword"
+                                aria-describedby="emailHelp">
+                            <div id="repassNotValid"
+                                class="d-none form-text text-center  bg-danger-subtle text-danger-50 p-4 rounded-3">
+                                Enter valid repassword
+                            </div>
+                        </div>
+
+                        <!-- end input section 1 -->
+
+                    </div>
+                    <div class="d-flex justify-content-center align-content-center ">
+                        <button id="btnsubmit" type="submit"
+                            class="btn btn-outline-danger disabled text-center">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- end contact -->
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- end code .  -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+
+
+
+</html>
