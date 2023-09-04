@@ -10,14 +10,7 @@ let maelBlock = document.getElementById('allMeals')
 // ===========================================================
 
 
-$(document).ready(function () {
-    $('#loding .lds-ellipsis').fadeOut(1000, function () {
-        $('#loding').fadeOut(1000, function () {
-            $('body').css('overflow', 'auto')
-            $('#loding').addClass('d-none')
-        })
-    })
-})
+
 
 // window.addEventListener('load', function () {
 
