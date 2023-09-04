@@ -4,34 +4,6 @@ import { mael } from "./meal.js";
 let maelBlock = document.getElementById('allMeals')
 
 
-
-// ===========================================================
-// 0-loader ---using jquery
-// ===========================================================
-
-
-
-
-// window.addEventListener('load', function () {
-
-//     $('#loding .lds-ellipsis').fadeOut(1000, function () {
-//         $('#loding').fadeOut(1000, function () {
-//             $('body').css('overflow', 'auto')
-//             $('#loding').addClass('d-none')
-//         })
-//     })
-
-
-// })
-
-
-
-
-
-
-
-
-
 // ===========================================================
 // 1-the aside animation and close open aside ---using jquery
 // ===========================================================
